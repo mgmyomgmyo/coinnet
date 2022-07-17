@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+    --source:'Source Sans Pro', sans-serif;
+    --albert:'Albert Sans', sans-serif;
+    --able:'Abel', sans-serif;
+    --orange:#e0bb14;
+}
+html{
+    scroll-behavior:smooth;
+    cursor:none;
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background-color:#00d1ff;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#eac100;
+    border-radius:5px;
+}
+
+.cursor{
+    width:3.5rem;
+    height:3.5rem;
+    border:2px solid coral;
+    backdrop-filter:blur(2px);
+    border-radius:50%;
+    position:absolute;
+    z-index:1;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    transform-origin:100% 100%;
+ }
+ .cursor:hover{
+    transform:scale(1.1);
+ }
+
+.uppers .upperemail span{
+    padding-right:20px;
+}
+.uppers .upperemail a,
+.upperlogin a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    transition:all 0.5s;
+}
+.upperemail a i,
+.upperlogin a i{
+    color:orangered;
+    margin-right:10px;
+    font-size:15px;
+    transition:all 0.5s;
+}
+.upperlogin a:frst-child{
+    padding-right:10px;
+}
+.uppers a:hover{
+    color:orange;
+}
+.uppers a:hover i{
+    color:#fff;
+}
+
+@media (max-width:700px){
+    .uppers{
+       text-align:center
+    }
+}
+
+/* Start Header Section */
+
+.search-box{
+    width:300px;
+    border-radius:4px;
+    /* background:black; */
+
+    position:absolute;
+    top:40px;
+    left:22%;
+
+    overflow:hidden;
+    visibility:hidden;
+    opacity:0;
+    
+    transition:all 0.3s;
+}
+.search-box input{
+    width:100%;
+    border:none;
+    background:#fffeb8;
+    /* color:#fff; */
+    border-radius:3px;
+    padding:10px;
+    
+    outline:none;
+}
+.search-box.active{
+    top:30px;
+    visibility:visible;
+    opacity:1;
+}
+
+@media(max-width:1199px){
+    .search-box.active{
+        top:75px;
+        visibility:visible;
+        opacity:1;
+    }
+}
+.navbar{
+    background:#fff;
+    padding:20px 30px;
+}
+.navbar .menuitems{
+    font-family:var(--albert);
+    color:#333;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:20px 15px;
+}
+.menulists{
+    list-style-type:none;
+    margin:10px 0;
+}
+
+.menuitems:hover{
+    color:orange;
+}
+.navbar .brands{
+    font-family:var(--source);
+    font-size:30px;
+}
+.lines1,.lines2,.lines3{
+    width:25px;
+    height:3px;
+    margin:6px;
+
+    transition:all 0.4s;
+}
+.crossxs .lines1{
+    transform:rotate(-45deg) translate(-6px,6px);
+}
+
+.crossxs .lines2{
+  opacity:0;
+}
+
+.crossxs .lines3{
+    transform:rotate(45deg) translate(-6px,-6px);
+}
+/* End Header Section */
+
+/* Start Blogbanners Section */
+ .blogbanners{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url('https://www.bankrate.com/2020/08/24165602/what-is-bitcoin.jpeg?auto=webp&optimize=high&crop=16:9');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+ }
+/* End Blogbanners Section */
+
+/* Start Blog Section */
+ .blogs .titles{
+   font-family:var(--able);
+ }
+
+ .blogs .news{
+    width:100%;
+    height:450px;
+   
+    overflow:hidden;
+ }
+ .news img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:all 0.3s ease;
+ }
+ .news:hover img{
+    transform:scale(1.05);
+ }
+
+.blogs .raises a{
+    text-decoration:none;
+    color:#222;
+    transition:all 0.3s;
+ }
+
+ .blogs .raises a:hover{
+  color:orange;
+ }
+
+ @media(max-width:976px){
+    .blogs .news{
+        width:100%;
+        height:300px; 
+        overflow:hidden;
+     }
+ }
+
+ .searchs{
+    position:relative;
+    display:flex;
+ }
+ .searchs input[type="text"]{
+    padding:10px 40px 10px 10px;
+ }
+ .searchs input[type='text']:focus{
+   box-shadow:none;
+   border-color:orange;
+ }
+
+ .searchs .icons{
+    position:absolute;
+    top:50%;
+    right:20px;
+
+    transform:translateY(-50%);
+ }
+
+ .blogs .conditions p a{
+   text-decoration:none;
+   color:#222;
+   transition:all 0.3s;
+ }
+ .blogs .conditions p a:hover{
+    color:orange;
+ }
+
+ .blogheres{
+    padding:0 30px;
+ }
+ @media(max-width:1259px){
+    .blogheres{
+        padding:0;
+    }
+
+    @media(max-width:762px){
+        .blogheres{
+            padding:0 10px;
+        }
+    }
+ }
+
+ .blogheres .tags{
+    padding-right:90px;
+ }
+ .blogheres .tags a{
+    display:inline-block;
+    text-decoration:none;
+    color:#333;
+    background:#f4f4f4;
+    font-size:14px;
+    padding:5px 10px;
+    transition:all 0.3s;
+ }
+
+ .blogheres .tags a:hover{
+    background-color:orange;
+    color:#fff;
+ }
+
+ @media(max-width:999px){
+    .blogheres .tags{
+        padding-right:30px;
+    }
+ }
+
+ .guides a{
+    text-decoration:none;
+    color:#777;
+    transition:all 0.3s;
+ }
+ .guides a:hover{
+    color:orange;
+    font-weight:400;
+ }
+ .digits a{
+    text-decoration:none;
+    color:#333;
+    font-size:18px;
+    padding:15px 20px;
+    background-color:#f3f3f3;
+    border-radius:5px;
+ }
+ .digiticons.active{
+    background-color:orange;
+
+ }
+
+/* End Blog Section */
+
+
+
+
+
+
+
+/* Start Footer Section */
+footer{
+    
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url('https://www.coindesk.com/resizer/-QZ0H8glB506_9zLDvkE6zvy75U=/1200x600/center/top/cloudfront-us-east-1.images.arcpublishing.com/coindesk/DL6H67TWLNGYRHVWXILJZC24IY.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.email-box{
+    width:90%;
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+.email-box input{
+    width:100%;
+    padding:10px 5px;
+    padding-right:60px;
+    border:none;
+    outline:none;
+
+}
+.email-box i{
+   position:absolute;
+   right:0;
+   background:var(--orange);
+   padding:14px 16px;
+   cursor:pointer;
+   transition:all 0.3s;
+}
+.email-box i:hover{
+    background:#333;
+}
+
+.footer-details ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.footer-details ul li{
+    line-height:2;
+}
+.footer-details ul li a{
+    text-decoration:none;
+    color:rgb(209, 206, 206);
+}
+.footer-details ul li:hover a{
+    color:var(--orange);
+}
+
+.footer-lists{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.footer-lists li{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid orange;
+    text-align:center;
+    line-height:40px;
+    margin-right:20px;
+    transition:all 0.5s ease;
+}
+.footer-lists li a{
+    color:#fff;
+    font-size:14px;
+    text-decoration:none;
+}
+.footer-lists li:hover{
+    background-color:var(--orange);
+    border:none;
+    transform:translateY(-7px);
+}
+
+.bottom-lists li a{
+    color:#999;
+}
+
+.bottom-lists li a:hover{
+    color:var(--orange);
+}
+
+.upper-icons{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--orange);
+    font-size:20px;
+    text-align:center;
+    line-height:60px;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    display:none;
+}
+.upper-icons i{
+    color:#fff;
+}
+
+/* End Footer Section */

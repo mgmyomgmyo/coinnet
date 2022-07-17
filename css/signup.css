@@ -1,0 +1,107 @@
+.signups{
+    height:100vh;
+    position:relative;
+}
+
+#myVideo {
+   min-width:100%;
+   min-height:100%;
+   position:fixed;
+   right:0;
+   bottom:0;
+  }
+
+.backgrounds{
+    min-width:100%;
+    min-height:100%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0.3));
+}
+
+/* Start Signup form */
+.signup-forms{
+    padding:40px;
+    background:linear-gradient(rgba(129, 215, 250, 0.4),rgba(255,255,255,0.3),rgb(200, 235, 235,0.5),rgb(79, 236, 236,0.2));
+    backdrop-filter:blur(15px);
+    border-radius:5px;
+    position:absolute;
+}
+
+.signup-forms .inputs{
+    border:none;
+    background:none;
+    border-bottom:1px solid aqua;
+    border-radius:0;
+    color:#fff;
+    font-size:18px;
+}
+.signup-forms .inputs:focus{
+    box-shadow:none;
+}
+
+.signup-forms .inputs::placeholder{
+    color:floralwhite;
+}
+
+.form-group .labels{
+    display:block;
+    margin-top:-50px;
+    margin-left:11px;
+    color:rgb(136, 41, 7);
+    font-size:14px;
+    font-weight:bold;
+    transition:all 0.5s;
+}
+
+.inputs:placeholder-shown + .labels{
+    opacity:0;
+    transform:translateY(20px);
+}
+
+.signup-forms .selects:focus{
+  box-shadow:none;
+}
+
+.signup-forms .selects{
+    background:transparent;
+    border:none;
+    border-bottom:1px solid aqua;
+    border-radius:0;
+    color:#fff;
+}
+
+.signup-forms .selects option{
+    color:#333;
+}
+
+.signup-forms #age:focus{
+ box-shadow:none;
+}
+.signup-forms #age{
+    width:60px;
+}
+
+.radiochecks,
+.checkboxs{
+    width:20px;
+    height:20px;
+}
+
+.signup-forms .submits{
+    background:linear-gradient(to right, rgb(69, 104, 220), rgb(176, 106, 179));
+    color:#fff;
+    border:none; 
+    outline:none;
+}
+.signup-forms .btn:focus{
+    box-shadow:none;
+}
+.signup-forms .btn:hover{
+    background:#333;
+    border:none;
+}
+
+
+/* End Signup form */

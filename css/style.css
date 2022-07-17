@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+    --source:'Source Sans Pro', sans-serif;
+    --albert:'Albert Sans', sans-serif;
+    --able:'Abel', sans-serif;
+    --orange:#e0bb14;
+}
+html{
+    scroll-behavior:smooth;
+    cursor:none;
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background-color:#00d1ff;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#eac100;
+    border-radius:5px;
+}
+
+/* Start cursor */
+ .cursor{
+    width:3.5rem;
+    height:3.5rem;
+    border:2px solid coral;
+    backdrop-filter:blur(2px);
+    border-radius:50%;
+    position:absolute;
+    z-index:1;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    transform-origin:100% 100%;
+ }
+ .cursor:hover{
+    transform:scale(1.1);
+ }
+/*End cursor */
+
+.uppers .upperemail span{
+    padding-right:20px;
+}
+.uppers .upperemail a,
+.upperlogin a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    transition:all 0.5s;
+}
+.upperemail a i,
+.upperlogin a i{
+    color:orangered;
+    margin-right:10px;
+    font-size:15px;
+    transition:all 0.5s;
+}
+.upperlogin a:frst-child{
+    padding-right:10px;
+}
+.uppers a:hover{
+    color:orange;
+}
+.uppers a:hover i{
+    color:#fff;
+}
+
+@media (max-width:700px){
+    .uppers{
+       text-align:center
+    }
+}
+
+/* Start Header Section */
+.header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://guardian.ng/wp-content/uploads/2020/12/Bitcoin.-Photo-Getty-1536x1152.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    position:relative;
+}
+.search-box{
+    width:300px;
+    border-radius:4px;
+    /* background:black; */
+
+    position:absolute;
+    top:40px;
+    left:22%;
+
+    overflow:hidden;
+    visibility:hidden;
+    opacity:0;
+    
+    transition:all 0.3s;
+}
+.search-box input{
+    width:100%;
+    border:none;
+    background:#fffeb8;
+    /* color:#fff; */
+    border-radius:3px;
+    padding:10px;
+    
+    outline:none;
+}
+.search-box.active{
+    top:30px;
+    visibility:visible;
+    opacity:1;
+}
+
+@media(max-width:1199px){
+    .search-box.active{
+        top:75px;
+        visibility:visible;
+        opacity:1;
+    }
+}
+.navbar{
+    background:#fff;
+    padding:20px 30px;
+}
+.navbar .menuitems{
+    font-family:var(--albert);
+    color:#333;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:20px 15px;
+}
+.menulists{
+    list-style-type:none;
+    margin:10px 0;
+}
+
+.menuitems:hover{
+    color:orange;
+}
+.navbar .brands{
+    font-family:var(--source);
+    font-size:30px;
+}
+.lines1,.lines2,.lines3{
+    width:25px;
+    height:3px;
+    margin:6px;
+
+    transition:all 0.4s;
+}
+.crossxs .lines1{
+    transform:rotate(-45deg) translate(-6px,6px);
+}
+
+.crossxs .lines2{
+  opacity:0;
+}
+
+.crossxs .lines3{
+    transform:rotate(45deg) translate(-6px,-6px);
+}
+/* End Header Section */
+
+/* Start Banner Section */
+.banners h1{
+    font-size:50px;
+    animation:anih1 1s linear;
+}
+
+.banners p{
+    animation:anip 1s linear;
+}
+
+
+.banners a{
+  text-decoration:none;
+  color:#fff;
+  text-transform:uppercase;
+  padding:10px 40px;
+  background-color:var(--orange);
+  border-radius:3px;
+  font-weight:bold;
+  transition:all 0.5s;
+  
+}
+.banners a:last-child{
+    background:#fff;
+    color:#000;
+}
+.banners a:hover{
+    background-color:#333;
+    color:#fff;
+}
+
+@keyframes anih1{
+    0%{
+        opacity:0;
+        transform:translateY(-50px);
+       
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes anip{
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+       
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:650px){
+    .banners a{
+        padding:10px 40px;
+        font-size:16px;
+    }
+}
+/* End Banner Section */
+
+/*Start Aboutuss Section*/
+.aboutuss h3{
+    font-family:var(--albert);
+}
+.aboutuss p{
+    font-family:var(--source);
+    font-size:16px;
+}
+.aboutuss a{
+    font-family:inherit;
+    color:#fff;
+    text-decoration:none;
+    background:var(--orange);
+    padding:10px 40px;
+    border-radius:3px;
+    transition:all 0.3s;
+}
+.aboutuss a:hover{
+    border:2px solid var(--orange);
+    background:none;
+    color:var(--orange);
+}
+/*End Aboutuss Section*/
+
+/*Start chooses section*/
+.chooses{
+    background:#eeebeb
+}
+.chooses h2{
+    font-family:var(--able);
+}
+
+.chooses .coins{
+    background:#fff;
+    padding:20px;
+}
+.chooses .coins:hover{
+    box-shadow:0 0 40px #888;
+}
+.chooses .coins p{
+   font-family:var(--albert);
+   font-size:16px;
+}
+/*End chooses section*/
+
+/*Start Works Section*/
+.createimgs{
+    height:105px;
+    background:var(--orange);
+    padding:0 35px;
+    display:grid;
+    place-items:center;
+    margin-right:30px;
+    transition:all 0.5s;
+}
+.createimgs:hover{
+    background:#333;
+}
+
+.createtexts h5{
+    font-family:var(--albert);
+    font-weight:bold;
+}
+/*End Works Section*/
+
+/*Start Prices Section*/
+.prices{
+    background-color:#f2f2f2;
+}
+.prices h2{
+    font-family:var(--albert);
+}
+
+.prices table{
+   background-color:#fff;
+}
+.prices table tr{
+    margin:20px 0;
+}
+/*End Prices Section*/
+
+/* Start Our Experts */
+  .experts h2{
+    font-family:var(--albert);
+  }
+
+  .expertinfos{
+    position:relative;
+    overflow:hidden;
+  }
+  .expertinfos > div{
+    width:100%;
+    height:30%;
+    background-color:rgba(0,0,0,0.8);
+    color:#fff;
+
+    position:absolute;
+   
+    bottom:-100%;
+    left:0;
+
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    opacity:0;
+
+    transition:all 0.5s;
+  }
+  .expertinfos:hover > div{
+    bottom:0;
+    opacity:1;
+  }
+  .expertinfos > div p{
+    margin-left:40px;
+  }
+  .expertinfos > div p span{
+    display:block;
+    /* letter-spacing:2px; */
+  }
+
+  .bitlists{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .bitlists li{
+     width:40px;
+     height:40px;
+     border:1px solid #999;
+     border-radius:50%;
+     margin:0 5px;
+     text-align:center;
+     line-height:40px;
+  }
+  .bitlists li a{
+    text-decoration:none;
+    color:#999;
+    transition:all 0.3s ease;
+  }
+  .bitlists li:hover{
+    background-color:var(--orange);
+    border:0;
+  }
+  .bitlists li:hover a{
+    color:#fff;
+  }
+
+  
+/* End Our Experts */
+
+/* Start Details Section */
+.details{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url('https://www.aljazeera.com/wp-content/uploads/2021/02/bitcoin.jpg?resize=1200%2C630');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.details .details-info{
+    width:150px;
+    height:150px;
+    border:3px solid #999;
+    border-radius:50%;
+    margin:0 40px;
+
+    display:grid;
+    place-items:center;
+}
+
+.details-info span{
+    font-size:50px;
+}
+
+@media(max-width:943px){
+   .details-par{
+    flex-direction:column;
+   }
+   @media(max-width:603px){
+    .details-info{
+        width:130px;
+        height:130px;
+        margin:0;
+    }
+    .details-info span{
+        font-size:40px;
+    }
+    .details-info p{
+        font-size:15px;
+    }
+    
+   }
+}
+
+/* End Details Section */
+
+
+/* Start News Section */
+.news .newsimg{
+    height:280px;
+    /* background:green; */
+    overflow:hidden; 
+}
+.news .newsimg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:all 0.3s;
+}
+.news .newsimg:hover img{
+    transform:scale(1.1);
+}
+.news .newstext h3{
+    font-family:var(--albert);
+    font-size:22px;
+}
+
+.news .newstext h3 a{
+    text-decoration:none;
+    color:#000;
+}
+.news .newstext h3:hover a{
+    color:orange;
+}
+/* End News Section */
+
+/* Start Footer Section */
+footer{
+    
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url('https://www.coindesk.com/resizer/-QZ0H8glB506_9zLDvkE6zvy75U=/1200x600/center/top/cloudfront-us-east-1.images.arcpublishing.com/coindesk/DL6H67TWLNGYRHVWXILJZC24IY.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.email-box{
+    width:90%;
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+.email-box input{
+    width:100%;
+    padding:10px 5px;
+    padding-right:60px;
+    border:none;
+    outline:none;
+
+}
+.email-box i{
+   position:absolute;
+   right:0;
+   background:var(--orange);
+   padding:14px 16px;
+   cursor:pointer;
+   transition:all 0.3s;
+}
+.email-box i:hover{
+    background:#333;
+}
+
+.footer-details ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.footer-details ul li{
+    line-height:2;
+}
+.footer-details ul li a{
+    text-decoration:none;
+    color:rgb(209, 206, 206);
+}
+.footer-details ul li:hover a{
+    color:var(--orange);
+}
+
+.footer-lists{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.footer-lists li{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid orange;
+    text-align:center;
+    line-height:40px;
+    margin-right:20px;
+    transition:all 0.5s ease;
+}
+@media(max-width:1262px){
+    .footer-lists li{
+        margin-right:5px;
+    }
+    @media(max-width:990px){
+        .footer-lists li{
+            margin-right:20px;
+        }
+    }
+}
+.footer-lists li a{
+    color:#fff;
+    font-size:14px;
+    text-decoration:none;
+}
+
+.footer-lists li:hover{
+    background-color:var(--orange);
+    border:none;
+    transform:translateY(-7px);
+}
+
+.bottom-lists li a{
+    color:#999;
+}
+
+.bottom-lists li a:hover{
+    color:var(--orange);
+}
+
+.upper-icons{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--orange);
+    font-size:20px;
+    text-align:center;
+    line-height:60px;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    display:none;
+}
+.upper-icons i{
+    color:#fff;
+}
+
+/* End Footer Section */

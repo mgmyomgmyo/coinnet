@@ -1,0 +1,100 @@
+
+.logins{
+    height:100vh;
+    position:relative;
+}
+#myvideo{
+    min-width:100%;
+    min-height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.backgrounds{
+    width:100%;
+    min-width:100%; 
+    min-height:100%;
+    background:linear-gradient(to right, rgb(0, 201, 255,0.2), rgb(146, 254, 157,0.4));
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* Start Login From */
+ .login-forms{
+    background:linear-gradient(rgba(129, 215, 250, 0.4),rgba(255,255,255,0.5),rgb(200, 235, 235,0.5),rgb(79, 236, 236,0.2));
+    backdrop-filter:blur(18px);
+    border-radius:10px;
+    padding:40px 80px;
+    position:absolute;
+ }
+
+ .titles{
+   background:linear-gradient(to right, rgb(54, 0, 51), rgb(11, 135, 147));
+   -webkit-background-clip:text;
+   background-clip:text;
+   color:transparent;    
+ }
+
+ .login-forms .inputs{
+    border:none;
+    background:none;
+    border-bottom:1px solid aqua;
+    border-radius:0;
+    color:#fff;
+    font-size:18px;
+    margin:10px 0;
+}
+
+.login-forms .inputs:focus{
+    box-shadow:none;
+}
+
+.login-forms .inputs::placeholder{
+    color:floralwhite;
+}
+
+.login-forms .labels{
+    display:block;
+    margin-top:-60px;
+    margin-left:11px;
+    color:rgb(136, 41, 7);
+    font-size:14px;
+    font-weight:bold;
+    transition:all 0.5s;
+}
+
+.inputs:placeholder-shown + .labels{
+    opacity:0;
+    transform:translateY(20px);
+}
+
+.checks{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+}
+
+.login-forms .btn{
+    background:linear-gradient(to right, rgb(131, 164, 212), rgb(182, 251, 255));
+    outline:none;
+    border:none;
+    transition:all 0.8s;
+}
+.login-forms .btn:focus{
+    box-shadow:0;
+}
+
+.login-forms .btn:hover{
+    background:linear-gradient(to left, rgb(131, 164, 212), rgb(182, 251, 255));
+   
+}
+
+.signups a{
+    text-decoration:none;
+    color:rgb(63, 38, 73);
+    font-weight:bold;
+    padding-left:10px;
+}
+/* End Login From */
